@@ -1,0 +1,5 @@
+echo '#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx lint-staged
+npm run type-check' > .husky/pre-commit
